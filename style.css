@@ -1,29 +1,105 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #0b2619;
-  color: #a0e8a0;
-  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0 20px 40px 20px;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/9/9b/UiTM_Raub_campus_1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #e8f5e9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
 h1 {
+  margin-top: 40px;
+  font-weight: 600;
+  font-size: 3em;
+  color: #a5d6a7;
   text-align: center;
-  color: #4caf50;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px #2e7d32;
+}
+
+#status {
+  margin: 10px 0 30px 0;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #c8e6c9;
+  padding: 10px 30px;
+  border-radius: 25px;
+  background: rgba(46, 125, 50, 0.6);
+  box-shadow: 0 0 10px #81c784;
+}
+
+#data {
+  background: rgba(46, 125, 50, 0.7);
+  padding: 25px 40px;
+  border-radius: 20px;
+  width: 320px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  margin-bottom: 40px;
 }
 
 #data p {
-  font-size: 1.2em;
+  font-size: 1.3em;
+  margin: 12px 0;
+  border-bottom: 1px solid #a5d6a7;
+  padding-bottom: 6px;
+}
+
+#data p:last-child {
+  border-bottom: none;
+}
+
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  max-width: 720px;
 }
 
 button {
-  margin: 5px;
-  padding: 10px 15px;
-  background-color: #228822;
+  background: #4caf50;
   border: none;
-  color: white;
+  color: #e8f5e9;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 14px 24px;
+  border-radius: 12px;
   cursor: pointer;
-  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(67, 160, 71, 0.5);
+  transition: all 0.3s ease;
+  flex: 1 1 140px;
+  min-width: 140px;
+  user-select: none;
+  text-align: center;
 }
 
 button:hover {
-  background-color: #44cc44;
+  background: #81c784;
+  color: #1b5e20;
+  box-shadow: 0 6px 14px rgba(129, 199, 132, 0.8);
+  transform: translateY(-4px);
+}
+
+button:active {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(81, 159, 82, 0.6);
+}
+
+@media (max-width: 480px) {
+  #data {
+    width: 100%;
+  }
+
+  button {
+    flex: 1 1 100%;
+    min-width: unset;
+  }
 }
