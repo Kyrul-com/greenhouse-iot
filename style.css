@@ -5,7 +5,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0 20px 40px 20px;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/9/9b/UiTM_Raub_campus_1.jpg') no-repeat center center fixed;
+  background: url('https://pahang.uitm.edu.my/images/2022/11/24/raub.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #e8f5e9;
   min-height: 100vh;
@@ -103,3 +103,4 @@ button:active {
     min-width: unset;
   }
 }
+
