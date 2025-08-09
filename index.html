@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Greenhouse IoT Monitoring</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Greenhouse IoT Monitoring</h1>
+  <div id="status">Connecting to server...</div>
+  
+  <div id="data">
+    <p>Temperature: <span id="temp">--</span> °C</p>
+    <p>Humidity: <span id="humidity">--</span> %</p>
+    <p>Battery: <span id="battery">--</span> %</p>
+    <p>Solar Power: <span id="solar">--</span> W</p>
+  </div>
+  
+  <div id="controls">
+    <button onclick="sendControl('in_fan', 1)">Turn In Fan ON</button>
+    <button onclick="sendControl('in_fan', 0)">Turn In Fan OFF</button>
+    <button onclick="sendControl('out_fan', 1)">Turn Out Fan ON</button>
+    <button onclick="sendControl('out_fan', 0)">Turn Out Fan OFF</button>
+    <button onclick="sendControl('mist', 1)">Turn Mist ON</button>
+    <button onclick="sendControl('mist', 0)">Turn Mist OFF</button>
+    <button onclick="sendControl('water1', 1)">Turn Water Pipe 1 ON</button>
+    <button onclick="sendControl('water1', 0)">Turn Water Pipe 1 OFF</button>
+    <button onclick="sendControl('water2', 1)">Turn Water Pipe 2 ON</button>
+    <button onclick="sendControl('water2', 0)">Turn Water Pipe 2 OFF</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
